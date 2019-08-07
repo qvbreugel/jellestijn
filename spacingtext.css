@@ -1,0 +1,32 @@
+.spacing {
+  size: 4px;
+  size: 8px;
+  size: 12px;
+  size: 16px;
+  size: 24px;
+  size: 32px;
+  size: 48px;
+  size: 64px;
+  size: 96px;
+  size: 128px;
+  size: 192px;
+  size: 256px;
+  size: 384px;
+  size: 512px;
+  size: 640px;
+  size: 768px;
+}
+
+.text {
+  font-size: 12px;
+  font-size: 14px;
+  font-size: 16px;
+  font-size: 18px;
+  font-size: 20px;
+  font-size: 24px;
+  font-size: 30px;
+  font-size: 36px;
+  font-size: 48px;
+  font-size: 60px;
+  font-size: 72px;
+}

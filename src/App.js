@@ -5,6 +5,7 @@ import Introduction from "./components/sections/introduction/Introduction";
 import Eggs from "./components/sections/eggs/Eggs";
 import Pigs from "./components/sections/pigs/Pigs";
 import Contact from "./components/sections/contact/Contact";
+import Order from "./components/sections/order/Order";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Introduction />
       <Eggs />
       <Pigs />
+      <Order />
       <Contact />
     </div>
   );

@@ -11,33 +11,50 @@
 
 /* Introduction */
 .introduction {
-  background-color: red;
+  /*background-color: hsl(252, 19%, 87%);*/
   text-align: center;
-  height: 256px;
+  height: 512px;
 }
 
 .introduction-title {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(232, 26%, 15%);
+
+  font-family: "Lato", sans-serif;
 }
 
 .introduction-text {
-  font-size: 12px;
+  font-size: 16px;
+  color: hsl(232, 12%, 38%);
+  width: 20em;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
 }
 
 .introduction-image {
   border-radius: 50%;
-  height: 96px;
+  height: 192px;
+  width: 192px;
+  margin-bottom: 12px;
+  margin-top: 48px;
+  text-align: center;
+  border: 2px solid hsl(232, 13%, 73%);
 }
 
 /* Eggs */
 .eggs {
-  background-color: blue;
+  background-color: hsl(232, 19%, 90%);
   text-align: center;
-  height: 256px;
+  height: 384px;
 }
 
 .eggs-title {
   font-size: 18px;
+}
+
+.eggs-text {
+  font-size: 12px;
 }
 
 /* Pigs */
@@ -51,9 +68,33 @@
   font-size: 18px;
 }
 
+.pigs-text {
+  font-size: 12px;
+}
+
+/* Order */
+.order {
+  background-color: pink;
+  text-align: center;
+  height: 256px;
+}
+
 /* Contact */
 .contact {
   background-color: purple;
   text-align: center;
   height: 256px;
+}
+
+.contact-title {
+  font-size: 18px;
+}
+
+/* Generic Text Styling */
+.sevenhundred {
+  font-weight: 700;
+}
+
+.sixhundred {
+  font-weight: 600;
 }

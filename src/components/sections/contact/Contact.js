@@ -37,8 +37,8 @@ const Contact = () => {
   };
 
   return (
-    <form className="feedback-form" onSubmit={handleSubmit} className="contact">
-      <h1>Your Feedback</h1>
+    <form className="contact" onSubmit={handleSubmit}>
+      <p className="contact-title">Nog vragen?</p>
       <textarea
         className="text-input"
         id="feedback-entry"

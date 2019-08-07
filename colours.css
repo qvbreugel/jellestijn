@@ -1,0 +1,38 @@
+.ninehundred {
+  color: hsl(232, 26%, 15%);
+}
+
+.eighthundred {
+  color: #3d415c;
+  color: (232, 20, 30);
+}
+
+.sevenhundred {
+  color: #404459;
+  color: (232, 16, 30);
+}
+
+.sixhundred {
+  color: hsl(232, 12%, 38%);
+}
+
+.fivehundred {
+  color: hsl(232, 10%, 45%);
+}
+
+.fourhundred {
+  color: #818498;
+  color: (232, 10, 55);
+}
+
+.threehundred {
+  color: hsl(232, 13%, 73%);
+}
+
+.twohundred {
+  color: hsl(232, 19%, 90%);
+}
+
+.hundred {
+  color: hsl(232, 25%, 97%);
+}
