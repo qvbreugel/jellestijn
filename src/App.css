@@ -1,17 +1,18 @@
 /* Header */
 .header {
-  background-color: yellow;
   text-align: center;
   height: 48px;
 }
 
 .header-title {
-  font-size: 18px;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: hsl(52, 0%, 15%);
 }
 
 /* Introduction */
 .introduction {
-  /*background-color: hsl(252, 19%, 87%);*/
   text-align: center;
   height: 512px;
 }
@@ -19,14 +20,14 @@
 .introduction-title {
   font-size: 20px;
   font-weight: 600;
-  color: hsl(232, 26%, 15%);
+  color: hsl(52, 0%, 15%);
 
   font-family: "Lato", sans-serif;
 }
 
 .introduction-text {
   font-size: 16px;
-  color: hsl(232, 12%, 38%);
+  color: hsl(52, 0%, 38%);
   width: 20em;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
@@ -39,57 +40,333 @@
   margin-bottom: 12px;
   margin-top: 48px;
   text-align: center;
-  border: 2px solid hsl(232, 13%, 73%);
+  border: 2px solid hsl(52, 0%, 73%);
 }
 
 /* Eggs */
 .eggs {
-  background-color: hsl(232, 19%, 90%);
+  background-color: hsl(52, 0%, 97%);
   text-align: center;
-  height: 384px;
+  height: 768px;
 }
 
 .eggs-title {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(52, 0%, 15%);
+  padding-top: 24px;
+  font-family: "Lato", sans-serif;
 }
 
 .eggs-text {
-  font-size: 12px;
+  font-size: 14px;
+  color: hsl(52, 0%, 38%);
+  width: 25em;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.eggs-heading {
+  color: hsl(52, 0%, 30%);
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.eggs-subheading {
+  color: hsl(52, 0%, 38%);
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0 8px 24px 8px;
+}
+
+.eggs-order {
+  height: 1152px;
+}
+
+.eggs-button {
+  border: none;
+  width: 192px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 16px;
+  background-color: hsl(52, 0%, 90%);
+  color: hsl(52, 0%, 20%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.5),
+    0 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+
+.eggs-form {
+  display: inline-block;
+  text-align: left;
+}
+
+.eggs-form input {
+  display: block;
+  text-align: left;
+  border-radius: 8px;
+  border: 2px solid hsl(52, 0%, 38%);
+  width: 256px;
+  height: 24px;
+  outline: none;
+  padding-left: 8px;
+  align-self: flex-start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.eggs-form select {
+  display: block;
+  text-align: left;
+  border-radius: 8px;
+  border: 2px solid hsl(52, 0%, 38%);
+  width: 268px;
+  height: 30px;
+  outline: none;
+  padding-left: 8px;
+  align-self: flex-start;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.eggs-form label {
+  display: inline-block;
+  margin-left: 4px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(52, 0%, 30%);
+}
+
+.eggs-form-boxes {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.eggs-form-boxes input {
+  margin-right: 32px;
+}
+
+.eggs-form-buttons {
+  display: flex;
+  margin-top: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  justify-content: space-between;
+}
+
+.eggs-form-buttons input {
+  width: 96px;
+  height: 32px;
+  text-align: center;
+  background-color: hsl(52, 0%, 55%);
+  color: hsl(52, 0%, 90%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  align-self: flex-end;
+  border: none;
+}
+
+.eggs-form-buttons button {
+  width: 96px;
+  text-align: center;
+  height: 32px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: hsl(52, 0%, 73%);
+  color: hsl(52, 0%, 20%);
 }
 
 /* Pigs */
 .pigs {
-  background-color: orange;
   text-align: center;
-  height: 256px;
+  height: 512px;
 }
 
 .pigs-title {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(52, 0%, 15%);
+  padding-top: 24px;
+  font-family: "Lato", sans-serif;
 }
 
 .pigs-text {
-  font-size: 12px;
+  font-size: 14px;
+  color: hsl(52, 0%, 38%);
+  width: 25em;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Order */
-.order {
-  background-color: pink;
+.pigs-heading {
+  color: hsl(52, 0%, 30%);
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.pigs-subheading {
+  color: hsl(52, 0%, 38%);
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0 8px 24px 8px;
+}
+
+/* Notify Me */
+
+.notifyme {
+  display: inline-block;
   text-align: center;
-  height: 256px;
+}
+
+.notifyme input {
+  text-align: left;
+  border-radius: 8px;
+  border: 2px solid hsl(52, 0%, 38%);
+  width: 256px;
+  height: 32px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.notifyme-submit {
+  width: 192px !important;
+  height: 32px !important;
+  text-align: center !important;
+  padding: auto !important;
+  background-color: hsl(52, 0%, 55%);
+  color: hsl(52, 0%, 90%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border: none !important;
+  margin-top: 24px;
 }
 
 /* Contact */
 .contact {
-  background-color: purple;
+  background-color: hsl(52, 0%, 97%);
   text-align: center;
-  height: 256px;
+  height: 768px;
 }
 
 .contact-title {
   font-size: 18px;
 }
 
+.contact-info {
+  text-align: left;
+  margin-left: 24px;
+  margin-top: 64px;
+}
+
+/* Box Contains */
+.boxcontains {
+  width: 96px;
+  height: 96px;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  border-radius: 5%;
+  background-color: hsl(52, 0%, 90%);
+  display: inline-block;
+  box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, 0.1),
+    inset 0 -2px 0 hsla(0, 0%, 100%, 0.15);
+}
+
+.boxcontains p {
+  display: inline;
+}
+
+.boxcontains-amount-number {
+  margin-top: 8px;
+  color: hsl(52, 0%, 20%);
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+}
+
+.boxcontains-amount-indicator {
+  margin-top: 4px;
+  color: hsl(52, 0%, 38%);
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.boxcontains-image {
+  margin-top: 12px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+.boxcontains-price {
+  color: hsl(52, 0%, 20%);
+  display: block;
+  margin-top: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Box Contains Form */
+.boxcontains-form {
+  width: 64px;
+  height: 64px;
+  margin-left: 12px;
+  border-radius: 5%;
+  background-color: hsl(52, 0%, 90%);
+  text-align: center;
+  display: inline-block;
+}
+
+.boxcontains-form-active {
+  background-color: hsl(52, 0%, 55%);
+}
+
+.boxcontains-form p {
+  display: inline;
+}
+
+.boxcontains-form-amount-number {
+  margin-top: 8px;
+  color: hsl(52, 0%, 20%);
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+}
+
+.boxcontains-form-amount-indicator {
+  margin-top: 4px;
+  color: hsl(52, 0%, 38%);
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.boxcontains-form-image {
+  margin-top: 4px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.boxcontains-form-price {
+  color: hsl(52, 0%, 20%);
+  display: block;
+  margin-top: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
 /* Generic Text Styling */
 .sevenhundred {
   font-weight: 700;
@@ -97,4 +374,8 @@
 
 .sixhundred {
   font-weight: 600;
+}
+
+.boxes {
+  width: 48px !important;
 }

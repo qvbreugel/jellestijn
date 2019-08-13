@@ -38,7 +38,8 @@ const Contact = () => {
 
   return (
     <form className="contact" onSubmit={handleSubmit}>
-      <p className="contact-title">Nog vragen?</p>
+      <p className="contact-title">Contact</p>
+
       <textarea
         className="text-input"
         id="feedback-entry"
@@ -50,6 +51,13 @@ const Contact = () => {
       />
       <div className="btn-group">
         <input type="submit" value="Submit" className="btn btn--submit" />
+      </div>
+      <div className="contact-info">
+        <p className="contact-heading">Holyweg 16</p>
+        <p className="contact-heading">3137 KB Vlaardingen</p>
+        <p className="contact-heading">info@jellestijn.nl</p>
+        <p className="contact-heading">06-43677765 (Stijn)</p>
+        <p className="contact-heading">06-14359393 (Jelle)</p>
       </div>
     </form>
   );
