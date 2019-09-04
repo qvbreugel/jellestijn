@@ -39,19 +39,21 @@ const Contact = () => {
   return (
     <form className="contact" onSubmit={handleSubmit}>
       <p className="contact-title">Contact</p>
-
+      <p className="contact-text">
+        Mocht je nog vragen hebben, kun je ons via het onderstaande formulier
+        een bericht sturen. Natuurlijk zijn wij ook telefonisch of per mail
+        bereikbaar.
+      </p>
       <textarea
-        className="text-input"
+        className="contact-input"
         id="feedback-entry"
         name="feedback-entry"
         onChange={handleChange}
-        placeholder="Enter your feedback here"
         required
         value={feedback}
       />
-      <div className="btn-group">
-        <input type="submit" value="Submit" className="btn btn--submit" />
-      </div>
+      <input type="submit" value="Verstuur!" className="contact-button" />
+      <hr className="contact-divider" />
       <div className="contact-info">
         <p className="contact-heading">Holyweg 16</p>
         <p className="contact-heading">3137 KB Vlaardingen</p>

@@ -21,6 +21,12 @@ const Eggs = () => {
         verkoop. Wij doen al het werk zelf met de hand en zorgen dat het zo vers
         mogelijk bij de klant terecht komt.
       </p>
+      <p className="eggs-text">
+        Voor het hek van de boerderij kunnen de eieren opgehaald worden. Wij
+        bezorgen standaard in Vlaardingen Holy. Stuur ons een bericht als je
+        wilt weten of we ook in jouw gebied kunnen bezorgen.
+      </p>
+
       <p className="eggs-heading">Prijzen</p>
       <p className="eggs-subheading">
         Wij verkopen eieren in dozen per zes en per tien stuks.
@@ -32,7 +38,6 @@ const Eggs = () => {
         Vanaf nu kun je ook online bij ons eieren bestellen. Na de bestelling
         nemen wij altijd nog even persoonlijk contact met je op.
       </p>
-
       {formVisible ? (
         <OrderEggs setFormVisible={setFormVisible} />
       ) : (
