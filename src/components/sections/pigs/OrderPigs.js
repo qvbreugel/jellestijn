@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const serviceId = "mailgun";
-const templateId = "eggs";
+const templateId = "meat";
 
 const OrderEggs = props => {
   const [name, setName] = useState("");
-  const [boxes, setBoxes] = useState("");
-  const [boxType, setBoxType] = useState(6);
-  const [orderType, setOrderType] = useState("Eenmalig");
+  const [packageWeight, setPackageWeight] = useState("4kg");
+  const [total, setTotal] = useState((43.8).toFixed(2).replace(".", ","));
+  const [packageAmount, setPackageAmount] = useState("1");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
 
@@ -18,11 +18,11 @@ const OrderEggs = props => {
       case "name":
         setName(event.target.value);
         break;
-      case "boxes":
-        setBoxes(event.target.value);
+      case "packageWeight":
+        setPackageWeight(event.target.value);
         break;
-      case "orderType":
-        setOrderType(event.target.value);
+      case "packageAmount":
+        setPackageAmount(event.target.value);
         break;
       case "address":
         setAddress(event.target.value);
@@ -39,17 +39,17 @@ const OrderEggs = props => {
   const handleSubmit = event => {
     event.preventDefault();
     console.log(name);
-    console.log(boxes);
-    console.log(orderType);
+    console.log(packageWeight);
+    console.log(packageAmount);
     console.log(address);
     console.log(phone);
 
     window.emailjs
       .send(serviceId, templateId, {
         name: name,
-        boxes: boxes,
-        boxType: boxType,
-        orderType: orderType,
+        packageAmount: packageAmount,
+        packageWeight: packageWeight,
+        price: total,
         address: address,
         phone: phone
       })
@@ -59,40 +59,57 @@ const OrderEggs = props => {
       .catch(err => console.error("Failed to send feedback. Error: ", err));
   };
 
-  const calculatePrice = event => {
+  const setMultiplier = event => {
     if (!isNaN(parseInt(event.target.value))) {
-      const newMultiplier = parseInt(event.target.value);
-      setPriceMultiplier(newMultiplier);
+      setPriceMultiplier(event.target.value);
+      calculatePrice(event.target.value);
+    }
+  };
+
+  const calculatePrice = multiplier => {
+    console.log(typeof multiplier);
+    if (typeof multiplier !== "string") {
+      multiplier = priceMultiplier;
+    }
+    if (packageWeight === "4kg") {
+      setTotal((multiplier * 43.8).toFixed(2).replace(".", ","));
+    } else if (packageWeight === "8kg") {
+      setTotal((multiplier * 87.6).toFixed(2).replace(".", ","));
     }
   };
 
   return (
-    <form className="eggs-form" onSubmit={handleSubmit}>
+    <form className="pigs-form" onSubmit={handleSubmit}>
       <label htmlFor="name">Naam</label>
       <input id="name" onChange={handleChange} required value={name} />
-      <label htmlFor="boxes">Aantal dozen</label>
-      <div className="eggs-form-boxes">
+      <label htmlFor="packageWeight">Type Vleespakket</label>
+      <select
+        id="packageWeight"
+        onChange={handleChange}
+        required
+        value={packageWeight}
+        onBlur={calculatePrice}
+      >
+        <option value="4kg">Pakket van 4kg</option>
+        <option value="8kg">Pakket van 8kg</option>
+      </select>
+      <label htmlFor="packageAmount">Aantal Pakketten</label>
+      <div className="pigs-form-boxes">
         <input
-          className="boxes"
-          id="boxes"
+          className="packageAmount"
+          id="packageAmount"
           onChange={handleChange}
           required
-          value={boxes}
-          onBlur={calculatePrice}
+          value={packageAmount}
+          onBlur={setMultiplier}
         />
       </div>
-      <label htmlFor="orderType">Soort bestelling</label>
-      <select id="orderType" onChange={handleChange} required value={orderType}>
-        <option value="Eenmalig">Eenmalig</option>
-        <option value="1x per week">1x per week</option>
-        <option value="1x per 2 weken">1x per 2 weken</option>
-        <option value="1x per 4 weken">1x per 4 weken</option>
-      </select>
+      <p>Totaalprijs: €{total}</p>
       <label htmlFor="address">Adres</label>
       <input id="address" onChange={handleChange} required value={address} />
       <label htmlFor="phone">Telefoonnummer</label>
       <input id="phone" onChange={handleChange} required value={phone} />
-      <div className="eggs-form-buttons">
+      <div className="pigs-form-buttons">
         <button
           type="button"
           onClick={() => {

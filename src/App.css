@@ -183,8 +183,9 @@
 
 /* Pigs */
 .pigs {
-  text-align: center;
+  text-align: center !important;
   height: 512px;
+  width: 100vw;
 }
 
 .pigs-title {
@@ -241,6 +242,89 @@
 
 .pigs-order {
   height: 1280px !important;
+}
+
+.pigs-form {
+  display: inline-block;
+  text-align: left;
+}
+
+.pigs-form input {
+  display: block;
+  text-align: left;
+  border-radius: 8px;
+  border: 2px solid hsl(52, 0%, 38%);
+  width: 256px;
+  height: 24px;
+  outline: none;
+  padding-left: 8px;
+  align-self: flex-start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pigs-form select {
+  display: block;
+  text-align: left;
+  border-radius: 8px;
+  border: 2px solid hsl(52, 0%, 38%);
+  width: 268px;
+  height: 30px;
+  outline: none;
+  padding-left: 8px;
+  align-self: flex-start;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pigs-form label {
+  display: inline-block;
+  margin-left: 4px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(52, 0%, 30%);
+}
+
+.pigs-form-boxes {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.pigs-form-boxes input {
+  margin-right: 32px;
+}
+
+.pigs-form-buttons {
+  display: flex;
+  margin-top: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  justify-content: space-between;
+}
+
+.pigs-form-buttons input {
+  width: 96px;
+  height: 32px;
+  text-align: center;
+  background-color: hsl(52, 0%, 55%);
+  color: hsl(52, 0%, 90%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  align-self: flex-end;
+  border: none;
+}
+
+.pigs-form-buttons button {
+  width: 96px;
+  text-align: center;
+  height: 32px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: hsl(52, 0%, 73%);
+  color: hsl(52, 0%, 20%);
 }
 
 /* Notify Me */
