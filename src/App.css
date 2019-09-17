@@ -27,7 +27,7 @@
 .introduction-text {
   font-size: 16px;
   color: hsl(52, 0%, 38%);
-  width: 20em;
+  width: 80vw;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
 }
@@ -46,7 +46,8 @@
 .eggs {
   background-color: hsl(52, 0%, 97%);
   text-align: center;
-  height: 896px;
+  height: 960px;
+  width: 100vw;
 }
 
 .eggs-title {
@@ -60,7 +61,7 @@
 .eggs-text {
   font-size: 14px;
   color: hsl(52, 0%, 38%);
-  width: 25em;
+  width: 80vw;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
 }
@@ -81,7 +82,7 @@
 }
 
 .eggs-order {
-  height: 1152px;
+  height: 1280px;
 }
 
 .eggs-button {
@@ -197,7 +198,7 @@
 .pigs-text {
   font-size: 14px;
   color: hsl(52, 0%, 38%);
-  width: 25em;
+  width: 80vw;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
 }
@@ -215,6 +216,31 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin: 0 8px 24px 8px;
+}
+
+.pigs-stock {
+  height: 640px;
+}
+
+.subheading-stock {
+  margin-bottom: 24px;
+}
+
+.pigs-button {
+  border: none;
+  width: 256px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 16px;
+  background-color: hsl(52, 0%, 90%);
+  color: hsl(52, 0%, 20%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.5),
+    0 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+
+.pigs-order {
+  height: 1280px !important;
 }
 
 /* Notify Me */
@@ -269,7 +295,7 @@
 .contact-text {
   font-size: 14px;
   color: hsl(52, 0%, 38%);
-  width: 25em;
+  width: 80vw;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
 }

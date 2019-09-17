@@ -10,9 +10,10 @@ function App() {
   return (
     <div>
       <Header />
+
       <Introduction />
       <Eggs />
-      <Pigs />
+      <Pigs inStock />
       <Contact />
     </div>
   );
