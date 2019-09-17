@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import BoxContains from "./BoxContains";
 
 const serviceId = "mailgun";
 const templateId = "eggs";
@@ -41,7 +40,6 @@ const OrderEggs = props => {
     event.preventDefault();
     console.log(name);
     console.log(boxes);
-    console.log(boxType);
     console.log(orderType);
     console.log(address);
     console.log(phone);
@@ -59,15 +57,6 @@ const OrderEggs = props => {
         console.log(res);
       })
       .catch(err => console.error("Failed to send feedback. Error: ", err));
-  };
-
-  const activeToggle = event => {
-    event.preventDefault();
-    if (boxType === 6) {
-      setBoxType(10);
-    } else {
-      setBoxType(6);
-    }
   };
 
   const calculatePrice = event => {
@@ -90,22 +79,6 @@ const OrderEggs = props => {
           required
           value={boxes}
           onBlur={calculatePrice}
-        />
-        <BoxContains
-          amount={6}
-          inForm
-          showPrice
-          active={boxType === 6 ? true : false}
-          onClick={activeToggle}
-          priceMultiplier={priceMultiplier}
-        />
-        <BoxContains
-          amount={10}
-          inForm
-          showPrice
-          active={boxType === 10 ? true : false}
-          onClick={activeToggle}
-          priceMultiplier={priceMultiplier}
         />
       </div>
       <label htmlFor="orderType">Soort bestelling</label>

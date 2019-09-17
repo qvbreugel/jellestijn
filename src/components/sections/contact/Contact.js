@@ -58,8 +58,12 @@ const Contact = () => {
         <p className="contact-heading">Holyweg 16</p>
         <p className="contact-heading">3137 KB Vlaardingen</p>
         <p className="contact-heading">info@jellestijn.nl</p>
-        <p className="contact-heading">06-43677765 (Stijn)</p>
-        <p className="contact-heading">06-14359393 (Jelle)</p>
+        <a href="tel:+31643677765">
+          <p className="contact-heading">06-43677765 (Stijn)</p>
+        </a>
+        <a href="tel:+31614359393">
+          <p className="contact-heading">06-14359393 (Jelle)</p>
+        </a>
       </div>
     </form>
   );
