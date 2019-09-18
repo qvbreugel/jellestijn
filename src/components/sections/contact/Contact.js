@@ -52,7 +52,9 @@ const Contact = () => {
         required
         value={feedback}
       />
-      <input type="submit" value="Verstuur!" className="contact-button" />
+      <div className="contact-button">
+        <input type="submit" value="Verstuur!" className="contact-button" />
+      </div>
       <hr className="contact-divider" />
       <div className="contact-info">
         <p className="contact-heading">Holyweg 16</p>

@@ -12,15 +12,19 @@ const Pigs = props => {
   let content = (
     <div className="pigs">
       <p className="pigs-title">Varkensvlees</p>
-      <p className="pigs-text">
-        Onze varkens hebben een grote plek gekregen in de stal. Ze kunnen zich
-        zelfs uitleven in hun eigen modderbad.
-      </p>
-      <p className="pigs-text">
-        Als de varkens groot genoeg zijn, worden ze stressvrij naar de slachter
-        gebracht waardoor de kwaliteit van het vlees gewaarborgd blijft. Daar
-        pakken wij zelf ook het vlees in.
-      </p>
+      <div className="pigs-top">
+        <p className="pigs-text">
+          Onze varkens hebben een grote plek gekregen in de stal. Ze kunnen zich
+          zelfs uitleven in hun eigen modderbad.
+        </p>
+      </div>
+      <div className="pigs-bottom">
+        <p className="pigs-text">
+          Als de varkens groot genoeg zijn, worden ze stressvrij naar de
+          slachter gebracht waardoor de kwaliteit van het vlees gewaarborgd
+          blijft. Daar pakken wij zelf ook het vlees in.
+        </p>
+      </div>
       <p className="pigs-heading">Op de hoogte blijven?</p>
       <p className="pigs-subheading">
         Op dit moment hebben wij geen varkensvlees. Laat hieronder je e-mail
@@ -39,26 +43,34 @@ const Pigs = props => {
         }
       >
         <p className="pigs-title">Varkensvlees</p>
-        <p className="pigs-text">
-          Onze varkens hebben een grote plek gekregen in de stal. Ze kunnen zich
-          zelfs uitleven in hun eigen modderbad.
-        </p>
-        <p className="pigs-text">
-          Als de varkens groot genoeg zijn, worden ze stressvrij naar de
-          slachter gebracht waardoor de kwaliteit van het vlees gewaarborgd
-          blijft. Daar pakken wij zelf ook het vlees in.
-        </p>
+        <div className="pigs-top">
+          <p className="pigs-text">
+            Onze varkens hebben een grote plek gekregen in de stal. Ze kunnen
+            zich zelfs uitleven in hun eigen modderbad.
+          </p>
+        </div>
+        <div className="pigs-bottom">
+          <p className="pigs-text">
+            Als de varkens groot genoeg zijn, worden ze stressvrij naar de
+            slachter gebracht waardoor de kwaliteit van het vlees gewaarborgd
+            blijft. Daar pakken wij zelf ook het vlees in.
+          </p>
+        </div>
         <p className="pigs-heading">Bestellen?</p>
-        <p className="pigs-subheading subheading-stock">
-          Je kunt ons varkensvlees online bestellen. Wij hebben onze
-          vleespakketten zo geprobeerd samen te stellen dat er voor ieder wat
-          wils bij zit.
-        </p>
-        <p className="pigs-subheading subheading-stock">
-          Mocht je bepaalde stukken vlees los willen bestellen of een eigen
-          pakket samen willen stellen, neem dan contant met ons op via het
-          contactformulier onderaan de pagina.
-        </p>
+        <div className="pigs-subheading-one">
+          <p className="pigs-subheading subheading-stock">
+            Je kunt ons varkensvlees online bestellen. Wij hebben onze
+            vleespakketten zo geprobeerd samen te stellen dat er voor ieder wat
+            wils bij zit.
+          </p>
+        </div>
+        <div className="pigs-subheading-two">
+          <p className="pigs-subheading subheading-stock">
+            Mocht je bepaalde stukken vlees los willen bestellen of een eigen
+            pakket samen willen stellen, neem dan contant met ons op via het
+            contactformulier onderaan de pagina.
+          </p>
+        </div>
         {formVisible ? (
           <OrderPigs setFormVisible={setFormVisible} />
         ) : (
