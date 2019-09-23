@@ -338,12 +338,32 @@
   .pigs-subheading {
     font-size: 20px;
     text-align: left;
-    width: auto;
+  }
+
+  .pigs-top {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .pigs-bottom {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .pigs-subheading-one {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .pigs-subheading-two {
+    width: 80vw;
+    margin: auto;
   }
 
   .pigs-button {
     width: 256px;
     font-size: 24px;
+    margin-bottom: 48px;
   }
 }
 
@@ -573,10 +593,16 @@
     width: 256px !important;
     height: 64px !important;
     font-size: 24px;
+    margin: auto;
+    margin-top: 32px;
   }
 
   .contact-heading {
     font-size: 24px;
+  }
+
+  .contact-divider {
+    margin-top: 64px;
   }
 }
 

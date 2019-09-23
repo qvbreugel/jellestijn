@@ -52,7 +52,7 @@ const Contact = () => {
         required
         value={feedback}
       />
-      <div className="contact-button">
+      <div className="contact-button-div">
         <input type="submit" value="Verstuur!" className="contact-button" />
       </div>
       <hr className="contact-divider" />
@@ -60,6 +60,7 @@ const Contact = () => {
         <p className="contact-heading">Holyweg 16</p>
         <p className="contact-heading">3137 KB Vlaardingen</p>
         <p className="contact-heading">info@jellestijn.nl</p>
+        <p className="contact-heading">71243410 (KvK)</p>
         <a href="tel:+31643677765">
           <p className="contact-heading">06-43677765 (Stijn)</p>
         </a>
