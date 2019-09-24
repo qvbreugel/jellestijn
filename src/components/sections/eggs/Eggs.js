@@ -38,11 +38,13 @@ const Eggs = () => {
       </p>
       <BoxContains amount={6} showPrice />
       <BoxContains amount={10} showPrice />
-      <p className="eggs-heading">Bestellen?</p>
-      <p className="eggs-subheading">
-        Vanaf nu kun je ook online bij ons eieren bestellen. Na de bestelling
-        nemen wij altijd nog even persoonlijk contact met je op.
-      </p>
+      <div className="eggs-order-text">
+        <p className="eggs-heading">Bestellen?</p>
+        <p className="eggs-subheading">
+          Vanaf nu kun je ook online bij ons eieren bestellen. Na de bestelling
+          nemen wij altijd nog even persoonlijk contact met je op.
+        </p>
+      </div>
       {formVisible ? (
         <OrderEggs setFormVisible={setFormVisible} />
       ) : (

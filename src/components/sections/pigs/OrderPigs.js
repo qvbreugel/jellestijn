@@ -82,6 +82,10 @@ const OrderEggs = props => {
     <form className="pigs-form" onSubmit={handleSubmit}>
       <label htmlFor="name">Naam</label>
       <input id="name" onChange={handleChange} required value={name} />
+      <label htmlFor="address">Adres</label>
+      <input id="address" onChange={handleChange} required value={address} />
+      <label htmlFor="phone">Telefoonnummer</label>
+      <input id="phone" onChange={handleChange} required value={phone} />
       <label htmlFor="packageWeight">Type Vleespakket</label>
       <select
         id="packageWeight"
@@ -103,12 +107,9 @@ const OrderEggs = props => {
           value={packageAmount}
           onBlur={setMultiplier}
         />
+        <p>Totaalprijs: €{total}</p>
       </div>
-      <p>Totaalprijs: €{total}</p>
-      <label htmlFor="address">Adres</label>
-      <input id="address" onChange={handleChange} required value={address} />
-      <label htmlFor="phone">Telefoonnummer</label>
-      <input id="phone" onChange={handleChange} required value={phone} />
+
       <div className="pigs-form-buttons">
         <button
           type="button"

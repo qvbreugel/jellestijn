@@ -1,6 +1,6 @@
 {
   "name": "jellestijn",
-  "version": "0.3.0",
+  "version": "0.3.5",
   "private": true,
   "dependencies": {
     "framer-motion": "^1.6.7",

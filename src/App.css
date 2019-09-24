@@ -142,7 +142,7 @@
 
 @media only screen and (min-width: 768px) {
   .eggs {
-    height: 1024px;
+    height: 1056px;
   }
   .eggs-title {
     font-size: 36px;
@@ -164,6 +164,11 @@
   .eggs-button {
     width: 256px;
     font-size: 24px;
+  }
+
+  .eggs-order-text {
+    width: 80vw;
+    margin: auto;
   }
 }
 
@@ -259,6 +264,12 @@
     height: 1536px;
   }
 
+  .eggs-form {
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+  }
+
   .eggs-form input {
     width: 384px;
     height: 32px;
@@ -273,6 +284,18 @@
     width: 396px;
     height: 38px;
     font-size: 18px;
+  }
+
+  .eggs-form-buttons input {
+    width: 96px;
+    height: 32px;
+    text-align: center;
+    background-color: hsl(52, 0%, 55%);
+    color: hsl(52, 0%, 90%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    align-self: flex-end;
+    border: none;
   }
 }
 
@@ -437,6 +460,12 @@
 
 .pigs-form-boxes input {
   margin-right: 32px;
+  width: 48px;
+}
+
+.pigs-form-boxes p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(52, 0%, 30%);
 }
 
 .pigs-form-buttons {
@@ -469,6 +498,56 @@
   border: none;
   background-color: hsl(52, 0%, 73%);
   color: hsl(52, 0%, 20%);
+}
+
+@media only screen and (min-width: 768px) {
+  .pigs-form {
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+    width: auto;
+  }
+  .pigs-form input {
+    width: 384px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .pigs-form label {
+    font-size: 18px;
+  }
+
+  .pigs-form select {
+    width: 396px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .pigs-form-buttons input {
+    width: 96px;
+    height: 32px;
+    text-align: center;
+    background-color: hsl(52, 0%, 55%);
+    color: hsl(52, 0%, 90%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    align-self: flex-end;
+    border: none;
+  }
+
+  .pigs-form-buttons {
+    padding: 0;
+  }
+
+  .pigs-form-boxes input {
+    width: 48px;
+  }
+
+  .pigs-form-boxes p {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(52, 0%, 30%);
+    font-size: 24px;
+  }
 }
 
 /* Notify Me */
@@ -706,6 +785,7 @@
   font-size: 16px;
   font-weight: 500;
 }
+
 /* Generic Text Styling */
 .sevenhundred {
   font-weight: 700;
