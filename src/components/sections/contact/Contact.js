@@ -5,18 +5,16 @@ const Contact = () => {
 
   const sendFeedback = (templateId, senderEmail, receiverEmail, feedback) => {
     window.emailjs
-      .send(
-        "mailgun",
-        templateId,
-        {
-          senderEmail,
-          receiverEmail,
-          feedback
-        },
-        "user_AzyuJ7RjIaibtCLJn1l4w"
-      )
+      .send("mailgun", templateId, {
+        senderEmail,
+        receiverEmail,
+        feedback
+      })
       .then(res => {
-        console.log(res);
+        if (res.status === 200) {
+          alert("Bericht succesvol verstuurd!");
+          setFeedback("");
+        }
       })
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error("Failed to send feedback. Error: ", err));
@@ -26,8 +24,8 @@ const Contact = () => {
     event.preventDefault();
 
     const senderEmail = "sandbox8d9e1bef4ad74d5faaaf28eebaf0d9a6.mailgun.org";
-    const receiverEmail = "jellestijndev@gmail.com";
-    const template = "template_S31IQpv2";
+    const receiverEmail = "info@jellestijn.nl";
+    const template = "contact_us";
 
     sendFeedback(template, senderEmail, receiverEmail, feedback);
   };

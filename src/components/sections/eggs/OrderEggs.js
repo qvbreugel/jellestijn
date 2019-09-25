@@ -39,12 +39,6 @@ const OrderEggs = props => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    console.log(name);
-    console.log(boxes);
-    console.log(boxType);
-    console.log(orderType);
-    console.log(address);
-    console.log(phone);
 
     window.emailjs
       .send(serviceId, templateId, {
@@ -56,7 +50,15 @@ const OrderEggs = props => {
         phone: phone
       })
       .then(res => {
-        console.log(res);
+        if (res.status === 200) {
+          alert("Bestelling is succesvol geplaatst!");
+          setName("");
+          setBoxes("");
+          setBoxType(6);
+          setOrderType("Eenmalig");
+          setAddress("");
+          setPhone("");
+        }
       })
       .catch(err => console.error("Failed to send feedback. Error: ", err));
   };
@@ -81,6 +83,10 @@ const OrderEggs = props => {
     <form className="eggs-form" onSubmit={handleSubmit}>
       <label htmlFor="name">Naam</label>
       <input id="name" onChange={handleChange} required value={name} />
+      <label htmlFor="address">Adres</label>
+      <input id="address" onChange={handleChange} required value={address} />
+      <label htmlFor="phone">Telefoonnummer</label>
+      <input id="phone" onChange={handleChange} required value={phone} />
       <label htmlFor="boxes">Aantal dozen</label>
       <div className="eggs-form-boxes">
         <input
@@ -115,10 +121,7 @@ const OrderEggs = props => {
         <option value="1x per 2 weken">1x per 2 weken</option>
         <option value="1x per 4 weken">1x per 4 weken</option>
       </select>
-      <label htmlFor="address">Adres</label>
-      <input id="address" onChange={handleChange} required value={address} />
-      <label htmlFor="phone">Telefoonnummer</label>
-      <input id="phone" onChange={handleChange} required value={phone} />
+
       <div className="eggs-form-buttons">
         <button
           type="button"

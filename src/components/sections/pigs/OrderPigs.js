@@ -38,11 +38,6 @@ const OrderEggs = props => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    console.log(name);
-    console.log(packageWeight);
-    console.log(packageAmount);
-    console.log(address);
-    console.log(phone);
 
     window.emailjs
       .send(serviceId, templateId, {
@@ -54,7 +49,15 @@ const OrderEggs = props => {
         phone: phone
       })
       .then(res => {
-        console.log(res);
+        if (res.status === 200) {
+          alert("Bericht is succesvol verstuurd!");
+          setName("");
+          setPackageWeight("4kg");
+          setPackageAmount("1");
+          setAddress("");
+          setPhone("");
+          setTotal((43.8).toFixed(2).replace(".", ","));
+        }
       })
       .catch(err => console.error("Failed to send feedback. Error: ", err));
   };
@@ -67,7 +70,6 @@ const OrderEggs = props => {
   };
 
   const calculatePrice = multiplier => {
-    console.log(typeof multiplier);
     if (typeof multiplier !== "string") {
       multiplier = priceMultiplier;
     }
