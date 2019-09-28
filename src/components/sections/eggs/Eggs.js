@@ -29,7 +29,7 @@ const Eggs = () => {
         <p className="eggs-text">
           Voor het hek van de boerderij kunnen de eieren opgehaald worden. Wij
           bezorgen standaard in Vlaardingen Holy. Stuur ons een bericht als je
-          wilt weten of we ook in jouw gebied kunnen bezorgen.
+          wil weten of we ook in jouw gebied kunnen bezorgen.
         </p>
       </div>
       <p className="eggs-heading">Prijzen</p>
